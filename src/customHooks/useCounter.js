@@ -35,8 +35,8 @@ export const useCounter = (type) => {
     // }, [counter,type ])
   
 
-      // const [counter, setCounter] = useState(0);
-  const [counter] = useCounter("+")
+      const [counter, setCounter] = useState(0);
+//   const [counter] = useCounter("+")
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -46,11 +46,13 @@ export const useCounter = (type) => {
         return () => clearInterval(interval);
     }, []);
 
-    const counterType = (type) => {
+    // const counterType = (type) => {
       
-    }
+    // }
 
     
 
     return [counter]
 }
+
+export default useCounter
