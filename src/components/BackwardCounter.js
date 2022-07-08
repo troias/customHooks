@@ -5,7 +5,7 @@ import Card from './Card';
 
 const BackwardCounter = () => {
   // const [counter, setCounter] = useState(0);
-  const [counter] = useCounter("+")
+  const counter = useCounter(false)
 
   // useEffect(() => {
   //   const interval = setInterval(() => {
